@@ -4,9 +4,7 @@ var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var methodOverride = require('method-override')
-// var db = process.env.MONGODB_URI || "mongodb://localhost/mini-project-db-4";
 var mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/mini-project-db-4';
-mongoose.connect(mongoUri);
 port = process.env.PORT || 3000;
 
 // MIDDLEWARE
@@ -26,7 +24,7 @@ app.use(methodOverride(function(req, res){
 app.use(methodOverride('_method'));
 
 // DATABASE
-mongoose.connect(db);
+mongoose.connect(mongoUri);
 
 // CONTROLLERS
 
