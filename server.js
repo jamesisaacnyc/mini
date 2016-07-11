@@ -1,5 +1,5 @@
 var express = require('express');
-app = express();
+var app = express();
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
