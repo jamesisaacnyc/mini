@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <header>
+  </header>
+  <body>
+  <h1>Must-Do Forum: Movies/Rock</h1>
+    <hr/>
+     <div id="container">
+    <ul>
+      <% for(var i = 0; i < music.length; i++) { %>
+        <% if(music[i].genre == 'Rock') { %>
+        <li>
+          <a href="music/<%=music[i].id%>">
+          <%=music[i].artist%>
+          </a> 
+          <h4><%=music[i].album%></h4>
+          <h4><%=music[i].song%></h4>
+          <h4><%=music[i].comment%></h4>
+          <h4><%=music[i].username%></h4>
+         </li>
+          <hr/>
+            
+
+    <!--     <div class= 'pictures'>
+    <a href="music/<%= music[i].id %>" >
+      <img src=<%= music[i].img %> />
+    </a>
+
+    </div> -->
+    <%}%>
+    <% } %>
+     <a href="rock/new">Create</a>
+      <a href="/mustdo">Home</a>
+      <a href="/mustdo/music">Back</a>
+  </body>
+</html>

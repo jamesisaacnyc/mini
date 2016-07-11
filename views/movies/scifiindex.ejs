@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <header>
+  </header>
+  <body>
+  <h1>Must-Do Forum: Movies/ Sci-Fi</h1>
+    <hr/>
+     <div id="container">
+    <ul>
+      <% for(var i = 0; i < movies.length; i++) { %>
+        <% if(movies[i].genre == 'Sci-Fi') { %>
+        <li>
+          <a href="movies/<%=movies[i].id%>">
+          <%=movies[i].artist%>
+          </a> 
+          <h4><%=movies[i].title%></h4>
+          <h4><%=movies[i].genre%></h4>
+           <h4><%=movies[i].comment%></h4>
+          <h4><%=movies[i].username%></h4>
+          </li>
+          <hr/>
+            
+
+    <!--     <div class= 'pictures'>
+    <a href="movies/<%= movies[i].id %>" >
+      <img src=<%= movies[i].img %> />
+    </a>
+
+    </div> -->
+    <%}%>
+    <% } %>
+      <a href="scifi/new">Create</a>
+      <a href="/mustdo">Home</a>
+      <a href="/mustdo/movies">Back</a>
+  </body>
+</html>

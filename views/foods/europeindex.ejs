@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <header>
+  </header>
+  <body>
+  <h1>Must-Do Forum: Restaurants/Europe</h1>
+    <hr/>
+     <div id="container">
+    <ul>
+      <% for(var i = 0; i < foods.length; i++) { %>
+        <% if(foods[i].style == 'Europe') { %>
+        <li>
+          <a href="foods/<%=foods[i].id%>">
+          <%=foods[i].name%>
+          </a> 
+          <h4><%=foods[i].style%></h4>
+          <h4><%=foods[i].location%></h4>
+           <h4><%=foods[i].comment%></h4>
+          <h4><%=foods[i].username%></h4>
+          </li>
+          <hr/>
+            
+
+    <!--     <div class= 'pictures'>
+    <a href="foods/<%= foods[i].id %>" >
+      <img src=<%= foods[i].img %> />
+    </a>
+
+    </div> -->
+    <%}%>
+    <% } %>
+      <a href="europe/new">Create</a>
+      <a href="/mustdo">Home</a>
+      <a href="/mustdo/foods">Back</a>
+  </body>
+</html>
