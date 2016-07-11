@@ -1,7 +1,7 @@
 var express = require('express');
 // Requirements
 var mongoose = require('mongoose');
-var db = process.env.MONGODB_URI || "mongodb://localhost/mini-project-db";
+var db = process.env.MONGODB_URI || "mongodb://localhost/mini-project-db-4";
 
 var express = require('express');
 var router = express.Router();

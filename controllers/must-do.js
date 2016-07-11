@@ -27,28 +27,28 @@ router.get('/', function(req, res) {
 router.get('/movies', function(req, res) {
 	Movie.find().then(function(movies) {
 		res.render('movies/movies.ejs', {movies});
-		// res.json(authors);
+		// 
 	});
 });
 
 router.get('/movies/action', function(req, res) {
 	Movie.find().then(function(movies) {
 		res.render('movies/actionindex.ejs', {movies});
-		// res.json(authors);
+		// 
 	});
 });
 
 router.get('/movies/comedy', function(req, res) {
 	Movie.find().then(function(movies) {
 		res.render('movies/comedyindex.ejs', {movies});
-		// res.json(authors);
+		// 
 	});
 });
 
 router.get('/movies/scifi', function(req, res) {
 	Movie.find().then(function(movies) {
 		res.render('movies/scifiindex.ejs', {movies});
-		// res.json(authors);
+		// 
 	});
 });
 
@@ -88,32 +88,32 @@ router.post('/movies', function(req, res){
 router.get('/music', function(req, res) {
 	Music.find().then(function(music) {
 		res.render('music/music.ejs', {music});
-		// res.json(authors);
+		// 
 	});
 });
 router.get('/music/rock', function(req, res) {
 	Music.find().then(function(music) {
 		res.render('music/rockindex.ejs', {music});
-		// res.json(authors);
+		// 
 	});
 });
 router.get('/music/rap', function(req, res) {
 	Music.find().then(function(music) {
 		res.render('music/rapindex.ejs', {music});
-		// res.json(authors);
+		// 
 	});
 });
 router.get('/music/rb', function(req, res) {
 	Music.find().then(function(music) {
 		res.render('music/rbindex.ejs', {music});
-		// res.json(authors);
+		// 
 	});
 });
 
 router.get('/movies/scifi', function(req, res) {
 	Movies.find().then(function(movies) {
 		res.render('movies/scifiindex.ejs', {movies});
-		// res.json(authors);
+		// 
 	});
 });
 
@@ -164,20 +164,20 @@ router.get('/foods', function(req, res) {
 router.get('/foods/american', function(req, res) {
 	Food.find().then(function(foods) {
 		res.render('foods/americanindex.ejs', {foods});
-		// res.json(authors);
+		// 
 	});
 });
 
 router.get('/foods/asian', function(req, res) {
 	Food.find().then(function(foods) {
 		res.render('foods/asianindex.ejs', {foods});
-		// res.json(authors);
+		// 
 	});
 });
 router.get('/foods/europe', function(req, res) {
 	Food.find().then(function(foods) {
 		res.render('foods/europeindex.ejs', {foods});
-		// res.json(authors);
+		// 
 	});
 });
 

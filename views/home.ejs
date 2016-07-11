@@ -5,23 +5,22 @@
 <title></title>
 </head>
 <body>
-	<div class="container">
+		<header>
 		<h1>Must-Do Forum: Home</h1>
 		<hr/>
-			<div class="icon">
-				<h5><a href="/mustdo">Home</a></h5>
+		</header>
+		<div class="container">
+
+			<div id="food" class="icon">
+				<button><a href="/mustdo/foods">Resteraunts</a></button>
 			</div>
 
-			<div class="icon">
-				<h5><a href="/mustdo/foods">Food</a></h5>
-			</div>
-
-			<div class="icon">
-				<h5><a href="/mustdo/music"> Music </a></h5>
+			<div id="music" class="icon">
+				<button><a href="/mustdo/music"> Music </a></button>
 				</div>
 
-			<div class="icon">
-				<h5><a href="/mustdo/movies">Movies</a></h5>
+			<div id="movies" class="icon">
+				<button><a href="/mustdo/movies">Movies</a></button>
 				</div>
 
 	</div>
@@ -38,6 +37,48 @@
 
 </body>
 <style type="text/css">
+header {
+
+	background-color: grey;
+
+ }
+
+ button	{ 
+ 	position: relative;
+ 		top: 150px;
+
+  }
+
+ #food { 
+ 	background-size: 200px 200px;
+ 	background-image:url("https://image.freepik.com/free-icon/fork-and-knife-in-cross_318-61306.jpg");
+
+  }
+
+  #music { 
+ 	background-size: 200px 200px;
+ 	background-image:url("http://www.scosche.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/r/h/rh1060-wireless-stereo-headphones.jpg");
+
+  }
+
+    #movies { 
+ 	background-size: 200px 200px;
+ 	background-image:url("http://clipartix.com/wp-content/uploads/2016/06/Movie-reel-film-reel-clipart.jpeg");
+
+  }
+
+	.container { 
+		position: relative;
+			top: 150px;
+			left: 25%;
+
+	 }
+	.icon { 
+		margin-right: 40px;
+		display: inline-block;
+		height: 200px;
+		width: 200px;
+	 }
 
 </style>
 </html>
