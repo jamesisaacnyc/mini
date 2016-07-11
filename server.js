@@ -37,7 +37,7 @@ app.use('/mustdo', must_doController);
 // app.use('/seed', seedController);
 
 // LISTEN
-app.listen(port);
+app.listen(3000);
 console.log('=============================');
 console.log('Server running off PORT: ' + port);
 console.log('=============================');
