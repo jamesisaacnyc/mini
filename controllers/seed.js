@@ -10,6 +10,8 @@ var Food = require('../models/food.js');
 var Music = require('../models/music.js');
 var Movie = require('../models/movie.js');
 
+mongoose.connect(db);
+
 // Seed Data
 var food1 = new Food({
 	name: "Blue Ribbon",

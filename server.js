@@ -5,8 +5,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var methodOverride = require('method-override')
 var mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/mini-project-db-4';
-mongoose.connect(mongoUri);
-port = process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 
 // MIDDLEWARE
 app.use(morgan('dev'));
@@ -25,7 +24,7 @@ app.use(methodOverride(function(req, res){
 app.use(methodOverride('_method'));
 
 // DATABASE
-
+mongoose.connect(mongoUri);
 
 // CONTROLLERS
 
@@ -37,7 +36,9 @@ app.use('/mustdo', must_doController);
 // app.use('/seed', seedController);
 
 // LISTEN
-app.listen(3000);
+app.listen(port);
 console.log('=============================');
 console.log('Server running off PORT: ' + port);
+console.log('PORT:', port)
+console.log('DB:', mongoUri)
 console.log('=============================');
